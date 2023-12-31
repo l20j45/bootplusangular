@@ -1,0 +1,68 @@
+<header class="py-5">
+  <div class="container text-center">
+    <h1>
+      Tienda
+      <span class="text-primary">Muebles</span>
+    </h1>
+  </div>
+  <div class="border-top py-4">
+    <div class="navbar navbar-expand-lg container navbar-light">
+      <a
+        href="index.html"
+        class="navbar-brand d-lg-none fs-2 fw-bold text-uppercase ms-5 text-primary text-decoration-none"
+        >Tiendas Muebles</a
+      >
+      <button
+        type="button"
+        class="navbar-toggler"
+        data-bs-toggle="collapse"
+        data-bs-target="#navegacion"
+      >
+        <span class="navbar-toggler-icon"> </span>
+      </button>
+      <div id="navegacion" class="collapse navbar-collapse">
+        <nav
+          class="navbar-nav container d-flex flex-md-row justify-content-md-between text-center"
+        >
+          <a
+            class="text-dark text-decoration-none"
+            [routerLink]="['/home']"
+            [routerLinkActive]="['activeLink']"
+            >Inicio</a
+          >
+          <a
+            class="text-dark text-decoration-none"
+            [routerLink]="['/nosotros']"
+            [routerLinkActive]="['activeLink']"
+            >Nosotros</a
+          >
+          <a
+            class="text-dark text-decoration-none"
+            [routerLink]="['/tienda']"
+            [routerLinkActive]="['activeLink']"
+            >Tienda</a
+          >
+          <a
+            class="text-dark text-decoration-none"
+            [routerLink]="['/blog']"
+            [routerLinkActive]="['activeLink']"
+            >Blog</a
+          >
+          <a
+            class="text-dark text-decoration-none"
+            [routerLink]="['/galeria']"
+            [routerLinkActive]="['activeLink']"
+            >Galeria</a
+          >
+          <a
+            class="text-dark text-decoration-none"
+            [routerLink]="['/contacto']"
+            [routerLinkActive]="['activeLink']"
+            >Contacto</a
+          >
+        </nav>
+      </div>
+    </div>
+  </div>
+  <div class="hero"></div>
+</header>
