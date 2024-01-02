@@ -1,0 +1,10 @@
+// .galeria li{
+//   margin-bottom: 1rem;
+// }
+// .galeria li:last-of-type{
+//   margin-bottom: 0;
+// }
+
+.galeria li:not(:last-of-type) {
+  margin-bottom: 1rem;
+}

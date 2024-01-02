@@ -1,0 +1,32 @@
+<div class="row justify-content-center">
+  <article class="col-md-8">
+    <h2 class="my-5">
+      Desde Contenido <span *ngIf="id"> {{ id }} </span>
+    </h2>
+    <img src="assets/img/nosotros.jpg" class="img-fluid" alt="" />
+    <div class="d-flex flex-column flex-md-row justify-content-md-between mt-4">
+      <p class="fw-bold">
+        Fecha: <span class="text-primary">22 de Octubre </span>
+      </p>
+      <p class="fw-bold">
+        Escrito por: <span class="text-primary">TiendaMuebles</span>
+      </p>
+    </div>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum rerum
+      assumenda illo, adipisci cum explicabo a iste. Ex in, alias iste quisquam
+      delectus, laborum quis iusto culpa, architecto rem soluta.
+    </p>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur modi
+      culpa cumque quidem, excepturi beatae. Iusto tempore, sequi corrupti, ex
+      blanditiis temporibus labore esse modi, quisquam eius numquam quod
+      architecto.
+    </p>
+    <a
+    [routerLink]="['/blog']"
+    class="btn btn-success px-5 py-3 fs-4 text-uppercase fw-bold rounded-0 d-block d-md-inline-block"
+    >Regresar al blog</a
+  >
+  </article>
+</div>

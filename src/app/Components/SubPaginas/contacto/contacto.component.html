@@ -1,1 +1,95 @@
-<p>contacto works!</p>
+<main class="container-xl py-5">
+  <h2 class="text-center my-5">Contacto</h2>
+  <div class="row justify-content-center">
+    <form action="" class="col-md-8 needs-validation" novalidate>
+      <fieldset>
+        <legend class="bg-primary text-center fs-2 text-white fw-bold">
+          Tus datos
+        </legend>
+      </fieldset>
+      <div class="mb-3">
+        <label for="name" class="form-label">Nombre: </label>
+        <input
+          type="text"
+          name="name"
+          id="name"
+          placeholder="Tu nombre"
+          class="form-control"
+          required
+        />
+        <span class="invalid-feedback">Hubo un error</span>
+        <label for="asunto" class="form-label">Asunto: </label>
+        <input
+          type="text"
+          name="asunto"
+          id="asunto"
+          class="form-control"
+          placeholder="Asunto"
+        />
+        <label for="email" class="form-label">Email: </label>
+        <input
+          type="email"
+          name="email"
+          id="email"
+          class="form-control"
+          placeholder="email"
+        />
+        <label for="telefono" class="form-label">Telefono: </label>
+        <input
+          type="tel"
+          name="telefono"
+          id="telefono"
+          class="form-control"
+          placeholder="telefono"
+        />
+        <label for="asunto" class="form-label">Asunto: </label>
+        <textarea class="form-control" rows="10"> </textarea>
+      </div>
+      <fieldset>
+        <legend class="bg-primary text-center fs-2 text-white fw-bold">
+          Pais
+        </legend>
+      </fieldset>
+      <label for="pais" class="form-label">Telefono: </label>
+      <select name="select" id="select" class="form-control">
+        <option value="">--Seleccione--</option>
+        <option value="MX">Mexico</option>
+        <option value="PR">Peru</option>
+        <option value="CO">Colombia</option>
+        <option value="AR">Argentina</option>
+        <option value="ES">España</option>
+        <option value="CL">Chile</option>
+      </select>
+      <fieldset>
+        <legend class="bg-primary text-center fs-2 text-white fw-bold">
+          Informacion extra
+        </legend>
+        <div class="mb-3">
+          <label for="clientes" class="form-label">Clientes: </label>
+          <input
+            type="radio"
+            name="tipo"
+            class="form-check-input ms-2"
+            id="clientes"
+          />
+        </div>
+        <div class="mb-3">
+          <label for="proovedor" class="form-label">Proveedor: </label>
+          <input
+            type="radio"
+            name="tipo"
+            class="form-check-input ms-2"
+            id="proovedor"
+          />
+        </div>
+        <div class="d-grid d-md-flex">
+          <input
+            type="submit"
+            value="Enviar Formulario"
+            class="btn btn-secondary fs-2 px-5 mt-5"
+          />
+        </div>
+      </fieldset>
+    </form>
+  </div>
+</main>

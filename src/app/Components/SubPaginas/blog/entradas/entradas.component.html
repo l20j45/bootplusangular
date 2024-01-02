@@ -1,0 +1,19 @@
+<article class="border-top pb-5" *ngFor="let art of datos">
+  <h2 class="my-5">{{ art.title }}</h2>
+  <img src="assets/img/nosotros.jpg" class="img-fluid" alt="" />
+  <div class="d-flex flex-column flex-md-row justify-content-md-between mt-4">
+    <p class="fw-bold">
+      Fecha: <span class="text-primary">{{ art.date }} </span>
+    </p>
+    <p class="fw-bold">
+      Escrito por: <span class="text-primary">{{ art.author }}</span>
+    </p>
+  </div>
+  <p>{{ art.textPrimary }}</p>
+  <p>{{ art.textSecundary }}</p>
+  <a
+    [routerLink]="['/entrada/' + art.id]"
+    class="btn btn-success px-5 py-3 fs-4 text-uppercase fw-bold rounded-0 d-block d-md-inline-block"
+    >Continuar leyendo</a
+  >
+</article>

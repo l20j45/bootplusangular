@@ -30,8 +30,7 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.scss",
-              "src/css/bootstrap.min.css"
+              "src/styles.scss"
             ],
             "scripts": []
           },
@@ -98,6 +97,9 @@
             ],
             "scripts": []
           }
+        },
+        "deploy": {
+          "builder": "angular-cli-ghpages:deploy"
         }
       }
     }

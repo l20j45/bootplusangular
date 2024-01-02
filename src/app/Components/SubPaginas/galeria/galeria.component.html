@@ -1,1 +1,25 @@
-<p>galeria works!</p>
+<main class="container-xl py-5">
+  <ul class="row list-unstyled galeria">
+    <li class="col-md-6 col-lg-4" *ngFor="let image of imageArray">
+      <a
+        data-bs-toggle="modal"
+        (click)="changedata($event)"
+        data-bs-target="#modal-imagen"
+      >
+        <img
+          src="assets/img/{{image}}"
+          class="img-fluid"
+          alt="Imagen Galeria"
+      /></a>
+    </li>
+  </ul>
+</main>
+<div class="modal fade" id="modal-imagen">
+  <div class="modal-dialog modal-lg modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-body">
+        <img src="{{ img }}" class="img-fluid" alt="Imagen Galeria" />
+      </div>
+    </div>
+  </div>
+</div>

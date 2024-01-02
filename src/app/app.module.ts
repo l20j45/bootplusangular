@@ -14,6 +14,8 @@ import { TiendaComponent } from './Components/SubPaginas/tienda/tienda.component
 import { BlogComponent } from './Components/SubPaginas/blog/blog.component';
 import { GaleriaComponent } from './Components/SubPaginas/galeria/galeria.component';
 import { ContactoComponent } from './Components/SubPaginas/contacto/contacto.component';
+import { EntradasComponent } from './Components/SubPaginas/blog/entradas/entradas.component';
+import { EntradaComponent } from './Components/SubPaginas/blog/entradas/entrada/entrada.component';
 
 @NgModule({
   declarations: [
@@ -28,6 +30,8 @@ import { ContactoComponent } from './Components/SubPaginas/contacto/contacto.com
     BlogComponent,
     GaleriaComponent,
     ContactoComponent,
+    EntradasComponent,
+    EntradaComponent,
   ],
   imports: [BrowserModule, routing],
   providers: [appRoutingProviders],

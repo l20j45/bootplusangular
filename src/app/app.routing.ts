@@ -10,6 +10,7 @@ import { TiendaComponent } from './Components/SubPaginas/tienda/tienda.component
 import { BlogComponent } from './Components/SubPaginas/blog/blog.component';
 import { GaleriaComponent } from './Components/SubPaginas/galeria/galeria.component';
 import { ContactoComponent } from './Components/SubPaginas/contacto/contacto.component';
+import { EntradaComponent } from './Components/SubPaginas/blog/entradas/entrada/entrada.component';
 
 const appRoutes: Routes = [
   { path: '', component: HomeComponent },
@@ -18,7 +19,9 @@ const appRoutes: Routes = [
   { path: 'tienda', component: TiendaComponent },
   { path: 'blog', component: BlogComponent },
   { path: 'galeria', component: GaleriaComponent },
-  { path: 'contacto', component: ContactoComponent }
+  { path: 'contacto', component: ContactoComponent },
+  { path: 'entrada', component: EntradaComponent },
+  { path: 'entrada/:id', component: EntradaComponent }
 ];
 export const appRoutingProviders: any[] = [];
 export const routing: ModuleWithProviders<any> =
